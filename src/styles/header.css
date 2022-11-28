@@ -1,0 +1,61 @@
+@font-face {
+    font-family: 'inter';
+    src: url(../assets/font/Inter/static/Inter-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'poppins-medium';
+    src: url(../assets/font/Poppins/Poppins-Medium.ttf);
+}
+
+.header {
+    font-family: 'poppins-medium';
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    background-color: var(--white);
+    color: var(--black);
+    flex-wrap: wrap;
+}
+
+.header h2{
+    font-family: 'inter';
+    font-size: 23px;
+    letter-spacing: 0.425em;
+    text-transform: uppercase;
+}
+
+
+/* active nav */
+
+.header nav{
+    max-width: 400px;
+    width: 20%;
+    min-width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header a{
+    color: var(--black);
+    text-decoration: none;
+}
+
+.header .reseau{
+    display: flex;
+    width: 12%;
+    max-width: 200px;
+    min-width: 150px;
+    justify-content: space-between;
+}
+
+/* .HoverNav{
+    width: 100%;
+    padding: 0;
+    border: none;
+    background-color: var(--white);
+}
+
+.HoverNav img{
+    width: 100%;
+} */
