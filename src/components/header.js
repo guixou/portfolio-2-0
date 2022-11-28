@@ -11,10 +11,9 @@ function Header() {
     
 
     return isOpen ? (
-        <React.Fragment>
             <div className='header'>
                 <h2>Guillaume picard</h2>
-                                    
+
                 <nav>
                     <a href="">Accueil</a>
                     <a href="">Parcour</a>
@@ -33,15 +32,14 @@ function Header() {
                         <img src={Github} alt="acéder à mon Github" />
                     </a>
                 </div>
-            </div>
 
-            <button 
-                className='activeNav'
-                onClick={() => setIsOpen(false)} 
-            >
-                <img src={DisableNav} alt=""/>
-            </button>
-        </React.Fragment>
+                <button 
+                    className='activeNav'
+                    onClick={() => setIsOpen(false)} 
+                >
+                    <img src={DisableNav} alt=""/>
+                </button>
+            </div>
     ) : (
         <div className='header headerActive'>
             <h2>Guillaume picard</h2>

@@ -4,9 +4,17 @@ import Content from './content.js'
 
 function body () {
     return (
-        <header>
-            <Header />
-        </header>
+        <div>
+            <header>
+                <Header />
+            </header>
+            <body>
+                <Content />
+            </body>
+            <footer>
+                <Footer />
+            </footer>
+        </div>
     );
 }
 
