@@ -26,7 +26,7 @@ function Header() {
                     <a href="https://www.linkedin.com/in/guillaume-picard-9513aa1b5/">
                         <img src={Linkedin} alt="acéder à mon Linkedin" />
                     </a>
-                    <Link to="">
+                    <Link to="/cv">
                         <img src={Cv} alt="acéder à Mon Cv" />
                     </Link>
                     <a href="https://github.com/guixou">

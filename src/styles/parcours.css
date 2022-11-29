@@ -1,0 +1,61 @@
+@font-face {
+    font-family: 'roboto';
+    src: url(../assets//font/Roboto/Roboto-Regular.ttf);
+}
+
+.parcours h3{
+    font-family: 'poppins-extrabold';
+    font-size: 40px;
+    text-align: center;
+}
+
+
+section{
+    display: flex;
+    align-items: center;
+    border: 3px solid var(--blue);
+    margin: 2%;
+    color: var(--white);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+section h4{
+    font-family: 'poppins-ExtraBold';
+}
+
+section p{
+    font-family: 'roboto';
+}
+
+section .react, section .WA, section .Valeo, section .BTS{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 2%;
+    width: 100%;
+}
+
+section .react{
+    background-image: 
+    linear-gradient(rgba(16, 19, 30, 0.9), rgba(16, 19, 30, 0.8)),
+        url('../assets/images/parcour/reactImg.jpg');
+}
+
+section .WA{
+    background-image: 
+    linear-gradient(rgba(16, 19, 30, 0.9), rgba(16, 19, 30, 0.8)),
+        url('../assets/images/parcour/3WAImg.jpg');
+}
+
+section .BTS{
+    background-image: 
+    linear-gradient(rgba(16, 19, 30, 0.9), rgba(16, 19, 30, 0.8)),
+        url('../assets/images/parcour/BTSImg.jpg');
+}
+
+section .Valeo{
+    background-image: 
+    linear-gradient(rgba(16, 19, 30, 0.9), rgba(16, 19, 30, 0.8)),
+        url('../assets/images/parcour/ValeoImg.jpg');
+}

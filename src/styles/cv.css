@@ -1,0 +1,9 @@
+.cv{
+    font-family: 'poppins-extrabold';
+    font-size: 12vw;
+    height: 40vh;
+    margin: 10vh 0 50% 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
