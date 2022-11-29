@@ -40,11 +40,6 @@
     gap: 10px;
 }
 
-.header a{
-    color: var(--black);
-    text-decoration: none;
-}
-
 .header .reseau{
     display: flex;
     width: 60%;

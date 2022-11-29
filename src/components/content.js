@@ -1,19 +1,17 @@
-import React from 'react';
-import '../styles/content.css'
-import Moi from '../assets/images/profile-pic.png';
+import Home from './home';
+import Contact from './contact';
+import '../styles/content.css';
+import {Routes, Route} from "react-router-dom"
 
-function Content () {
-    return (
-        <div className='content'>
-            <img src={Moi} alt="c'est moi" />
-            <div className='text'>
-                <h3>Bienvenue sur mon portfolio</h3>
-                <h1>Développeur Intégrateur web</h1>
-                <h3>Junior en freelance</h3>
-            </div>
-        </div> 
+function Content() {
+    return(
+        <div>
+            <Routes>
+                <Route path='/' element={<Home />} />
+                <Route path='/contact' element={<Contact />} />
+            </Routes>
+        </div>
     );
 }
 
-
-export default Content
+export default Content;

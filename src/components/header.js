@@ -5,6 +5,7 @@ import Github from '../assets/svg/github.svg';
 import ActiveNav from '../assets/svg/activeNav.svg'
 import DisableNav from '../assets/svg/disableNav.svg'
 import '../styles/header.css'
+import {Link} from "react-router-dom"
 
 function Header() {
     const [isOpen, setIsOpen] = useState(false)
@@ -15,19 +16,19 @@ function Header() {
                 <h2>Guillaume picard</h2>
 
                 <nav>
-                    <a href="">Accueil</a>
-                    <a href="">Parcour</a>
-                    <a href="">Portfolio</a>
-                    <a href="">Contact</a>
+                    <Link to="/">Accueil</Link>
+                    <Link to="/parcour">Parcour</Link>
+                    <Link to="/portfolio">Portfolio</Link>
+                    <Link to="/contact">Contact</Link>
                 </nav>
 
                 <div className='reseau'>
                     <a href="https://www.linkedin.com/in/guillaume-picard-9513aa1b5/">
                         <img src={Linkedin} alt="acéder à mon Linkedin" />
                     </a>
-                    <a href="">
+                    <Link to="">
                         <img src={Cv} alt="acéder à Mon Cv" />
-                    </a>
+                    </Link>
                     <a href="https://github.com/guixou">
                         <img src={Github} alt="acéder à mon Github" />
                     </a>

@@ -1,0 +1,39 @@
+.contact{
+    font-family: 'poppins-medium';
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1%;
+}
+
+.contact h3{
+    font-family: 'poppins-ExtraBold';
+    margin: 0;
+}
+
+.description{
+    background-image: 
+        linear-gradient(rgba(16, 19, 30, 0.8), rgba(16, 19, 30, 0.7)),
+        url('../assets/images/computerBg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2%;
+    width: 98%;
+    max-width: 400px;
+    height: 400px;
+    margin-bottom: 15%;
+}
+
+.mail p{
+    margin: 0;
+}
+
+.mail{
+    line-height: 40px;
+}

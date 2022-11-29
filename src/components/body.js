@@ -1,6 +1,6 @@
 import Header from './header.js';
 import Footer from './footer.js';
-import Content from './content.js'
+import Content from './content'
 
 function body () {
     return (
