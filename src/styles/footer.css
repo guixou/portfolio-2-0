@@ -1,5 +1,21 @@
-/* .footer {
+.language, .copyright{
     display: flex;
-    width: 100%;
+    font-family: 'Poppins-medium';
+}
+
+.language img{
+    width: 20px;
+    margin-left: 5px;
+}
+
+.copyright img{
+    width: 15px;
+    margin-left: 5px;
+}
+
+.footer{
+    display: flex;
     justify-content: space-around;
-} */
+    flex-wrap: wrap;
+    margin-top: 10%;
+}
