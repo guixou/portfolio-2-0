@@ -7,55 +7,93 @@
     font-family: 'poppins-extrabold';
     font-size: 40px;
     text-align: center;
+    margin-top: 0;
 }
 
 
-section{
-    display: flex;
-    align-items: center;
-    border: 3px solid var(--blue);
-    margin: 2%;
-    color: var(--white);
-    border-radius: 20px;
-    overflow: hidden;
+.parcours section{
+    margin: 15px;
+    color: var(--black);
 }
 
-section h4{
+.parcours section h4{
     font-family: 'poppins-ExtraBold';
 }
 
-section p{
+.parcours section p{
     font-family: 'roboto';
 }
 
-section .react, section .WA, section .Valeo, section .BTS{
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 2%;
+.parcours .description{
+    margin-bottom: 80px;
     width: 100%;
 }
 
-section .react{
-    background-image: 
-    linear-gradient(rgba(16, 19, 30, 0.9), rgba(16, 19, 30, 0.8)),
-        url('../assets/images/parcour/reactImg.jpg');
+.parcours section img{
+    width: 80px;
+    border: 5px solid var(--blue);
+    border-radius: 100px;
+    position: absolute;
+    display: none;
+    z-index: -1;
 }
 
-section .WA{
-    background-image: 
-    linear-gradient(rgba(16, 19, 30, 0.9), rgba(16, 19, 30, 0.8)),
-        url('../assets/images/parcour/3WAImg.jpg');
+.tree .react::before{
+    position: absolute;
+    left: 58px;
+    width: 5px;
+    margin-left: -1.5px;
+    content: '';
+    background-color: var(--blue);
+    z-index: -2;
 }
 
-section .BTS{
-    background-image: 
-    linear-gradient(rgba(16, 19, 30, 0.9), rgba(16, 19, 30, 0.8)),
-        url('../assets/images/parcour/BTSImg.jpg');
+.parcours .next {
+    width: 20px;
+    border: 5px solid var(--blue);
+    border-radius: 100px;
+    height: 20px;
+    background-color: var(--orange);
+    margin-left: 45px;
+    display: none;
+    margin-top: -2px;
+    position: relative;
 }
 
-section .Valeo{
-    background-image: 
-    linear-gradient(rgba(16, 19, 30, 0.9), rgba(16, 19, 30, 0.8)),
-        url('../assets/images/parcour/ValeoImg.jpg');
+@media screen and (min-width: 375px) {
+    .parcours .description {
+      padding-left: 100px;
+      width: 250px;
+    }
+    
+    .parcours section img{
+        display: inline;
+    }
+
+    .tree .react::before{
+        height: 1480px;
+    }   
+
+    .parcours .next {
+        display: block;
+    }
+  }
+
+@media screen and (min-width: 425px) {
+    .tree .react::before{
+        height: 1390px;
+    }
+    .parcours .description{
+        width: 300px;
+    }
+}
+
+@media screen and (min-width: 530px) {
+    .tree .react::before{
+        height: 1120px;
+    }
+    
+    .parcours .description{
+        width: 400px;
+    }
 }

@@ -8,9 +8,9 @@ function body () {
             <header>
                 <Header />
             </header>
-            <body>
+            <div>
                 <Content />
-            </body>
+            </div>
             <footer>
                 <Footer />
             </footer>
