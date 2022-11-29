@@ -12,7 +12,7 @@
     margin: 0;
 }
 
-.description{
+.contact .description{
     background-image: 
         linear-gradient(rgba(16, 19, 30, 0.8), rgba(16, 19, 30, 0.7)),
         url('../assets/images/computerBg.jpg');

@@ -1,0 +1,11 @@
+.portfolio img{
+    width: 100%;
+}
+
+.portfolio .description h4{
+    font-family: 'poppins-extrabold';   
+}
+
+.portfolio .description p{
+    font-family: 'poppins-medium';   
+}

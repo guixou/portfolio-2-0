@@ -14,32 +14,35 @@ function Header() {
     return isOpen ? (
             <div className='header'>
                 <h2>Guillaume picard</h2>
+                <div className='menu'>
+                    <div className='menuBg'>
+                        <nav>
+                            <Link to="/">Accueil</Link>
+                            <Link to="/parcour">Parcour</Link>
+                            <Link to="/portfolio">Portfolio</Link>
+                            <Link to="/contact">Contact</Link>
+                        </nav>
 
-                <nav>
-                    <Link to="/">Accueil</Link>
-                    <Link to="/parcour">Parcour</Link>
-                    <Link to="/portfolio">Portfolio</Link>
-                    <Link to="/contact">Contact</Link>
-                </nav>
+                        <div className='reseau'>
+                            <a href="https://www.linkedin.com/in/guillaume-picard-9513aa1b5/">
+                                <img src={Linkedin} alt="acéder à mon Linkedin" />
+                            </a>
+                            <Link to="/cv">
+                                <img src={Cv} alt="acéder à Mon Cv" />
+                            </Link>
+                            <a href="https://github.com/guixou">
+                                <img src={Github} alt="acéder à mon Github" />
+                            </a>
+                        </div>
+                    </div>
 
-                <div className='reseau'>
-                    <a href="https://www.linkedin.com/in/guillaume-picard-9513aa1b5/">
-                        <img src={Linkedin} alt="acéder à mon Linkedin" />
-                    </a>
-                    <Link to="/cv">
-                        <img src={Cv} alt="acéder à Mon Cv" />
-                    </Link>
-                    <a href="https://github.com/guixou">
-                        <img src={Github} alt="acéder à mon Github" />
-                    </a>
+                    <button 
+                        className='activeNav'
+                        onClick={() => setIsOpen(false)} 
+                    >
+                        <img src={DisableNav} alt=""/>
+                    </button>
                 </div>
-
-                <button 
-                    className='activeNav'
-                    onClick={() => setIsOpen(false)} 
-                >
-                    <img src={DisableNav} alt=""/>
-                </button>
             </div>
     ) : (
         <div className='header headerActive'>
