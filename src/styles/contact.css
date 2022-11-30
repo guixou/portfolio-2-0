@@ -1,3 +1,8 @@
+.contact .computerBg{
+    width: 600px;
+    display: none;
+}
+
 .contact{
     font-family: 'poppins-medium';
     font-size: 18px;
@@ -37,4 +42,32 @@
 
 .mail{
     line-height: 40px;
+}
+
+@media screen and (min-width: 1024px) {
+    .contact{
+        flex-direction: row;
+        justify-content: center;
+        height: 75vh;
+    }
+
+    .contact .description{
+        background-image: none;
+        background-color: var(--black);
+        margin: 0 20px 0 0;
+    }
+    .contact .description h3{
+        color: var(--white);
+    }
+}
+
+@media screen and (min-width: 1250px) {
+    
+    .contact .computerBg{
+        display: inline;
+    }
+
+    .contact .description{
+        margin-left: -200px;
+    }
 }

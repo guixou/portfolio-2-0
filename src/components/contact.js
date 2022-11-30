@@ -7,6 +7,7 @@ function contact() {
       
     return (
         <div className='contact'>
+            <img src={ComputerBg} alt="ordinateur" className='computerBg' />
             <div className='description'>
                 <h3>Création de site web :</h3>
                 <ul>

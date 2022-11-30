@@ -101,3 +101,40 @@
 }
 
 /* responsive PC */
+
+@media screen and (min-width: 1024px) {
+    .parcours .tree{
+        display: flex;
+        flex-direction: column;
+        margin-left: calc(50vw - 80px);
+        height: 200vh;
+        justify-content: space-around;
+    }
+    .parcours .description{
+        position: absolute;
+        padding-left: 180px;
+        margin-top: -25px;
+    }
+
+
+    .parcours .WA .description, .parcours .Valeo .description{
+        padding-left: 0;
+        margin-left: -420px;
+        text-align: end;
+    }
+
+    .parcours section img{
+        width: 150px;
+    }
+
+    .tree .react::before{
+        left: 50.7vw;
+        width: 5px;
+        margin-left: 0;
+        height: 160vh;
+    }
+
+    .parcours .next{
+        margin-left: 80px;
+    }
+}
