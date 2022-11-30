@@ -26,8 +26,8 @@
     letter-spacing: 0.425em;
     text-transform: uppercase;
     margin-bottom: 64px;
+    font-weight: 400;
 }
-
 
 /* active nav */
 
@@ -70,10 +70,10 @@
     top: 11vw;
 }
 
-.position{
+/* .position{
     width: 100%;
     background-color: var(--white);
-}
+} */
 
 /* supperposition menu */
 
@@ -86,3 +86,51 @@
 .header .menuBg{
     background-color: var(--white);
 }
+
+/* computer version */
+
+.headerPC{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 ;
+    padding: 2% 2% 10px 2%;
+    border-bottom: 1px solid var(--black);
+}
+.headerPC h2 {
+    font-family: 'inter';
+    font-size: 32px;
+    letter-spacing: 0.425em;
+    text-transform: uppercase;
+    margin: 0;
+    font-weight: 400;
+    width: 30%;
+}
+
+.headerPC .reseau{
+    display: flex;
+    width: 12%;
+    min-width: 160px;
+    justify-content: space-between;
+}
+
+.headerPC nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+    width: 30%;
+}
+
+@media screen and (min-width: 1024px) {
+    .headerPC h2{
+        width: 20%;
+    }
+}
+
+@media screen and (min-width: 1140px) {
+    .headerPC h2{
+        width: 44%;
+        margin-right: -15%;
+    }
+}
+

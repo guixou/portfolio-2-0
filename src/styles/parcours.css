@@ -60,6 +60,8 @@
     position: relative;
 }
 
+/* reponsive mobile */
+
 @media screen and (min-width: 375px) {
     .parcours .description {
       padding-left: 100px;
@@ -97,3 +99,5 @@
         width: 400px;
     }
 }
+
+/* responsive PC */

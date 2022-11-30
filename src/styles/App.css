@@ -4,3 +4,8 @@
   --blue: #155263;
   --orange: #FF9A3C;
 }
+
+h1, h2, h3, h4{
+  
+  color: var(--black);
+}

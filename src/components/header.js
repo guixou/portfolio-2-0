@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import ReactDOM from "react-dom";
 import Linkedin from '../assets/svg/linkedin.svg';
 import Cv from '../assets/svg/cv.svg';
 import Github from '../assets/svg/github.svg';
@@ -9,11 +10,45 @@ import {Link} from "react-router-dom"
 
 function Header() {
     const [isOpen, setIsOpen] = useState(false)
+    let [sizeScreen, setSizeSreen] = useState(true)
     
+        function handleResize() {
+            if (window.innerWidth > 1023) {
+                setSizeSreen(true)
+            } else {
+                setSizeSreen(false)
+            }
+        
+        }
+        window.addEventListener('resize', handleResize)
+    
+    return sizeScreen ? (
 
-    return isOpen ? (
+        <div className='headerPC'>
+            <h2>guillaume picard</h2>
+            <nav>
+                <Link to="/">Accueil</Link>
+                <Link to="/parcour">Parcours</Link>
+                <Link to="/portfolio">Portfolio</Link>
+                <Link to="/contact">Contact</Link>
+            </nav>
+
+            <div className='reseau'>
+                <a href="https://www.linkedin.com/in/guillaume-picard-9513aa1b5/">
+                    <img src={Linkedin} alt="acéder à mon Linkedin" />
+                </a>
+                <Link to="/cv">
+                    <img src={Cv} alt="acéder à Mon Cv" />
+                </Link>
+                <a href="https://github.com/guixou">
+                    <img src={Github} alt="acéder à mon Github" />
+                </a>
+            </div>
+        </div>
+
+    ) : isOpen ? (
             <div className='header'>
-                <h2>Guillaume picard</h2>
+                <h2>guillaume picard</h2>
                 <div className='menu'>
                     <div className='menuBg'>
                         <nav>

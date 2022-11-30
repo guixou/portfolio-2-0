@@ -3,29 +3,62 @@
     src: url(../assets/font/Poppins/Poppins-ExtraBold.ttf);
 }
 
-.content{
+.home{
     display: flex;
     flex-direction: column;
 }
 
-.content img{
+.home img{
     width: 80%;
     margin: 5% 10% 20% 10%;
 }
 
-.content .text{
+.home .text{
     margin-left: 5vw;
     line-height: 10vw;
 }
 
-.content h3{
+.home h3{
     font-family: 'poppins-medium';
     font-size: 4vw;
     margin: 0;
 }
 
-.content h1{
+.home h1{
     font-family: 'poppins-ExtraBold';
     font-size: 12vw;
     margin: 0;
+}
+
+/* computer version */
+
+@media screen and (min-width: 1024px){
+
+    .home{
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        height: 78vh;
+        align-items: center;
+    }
+    .home img{
+        width: 31vw;
+        height: 31vw;
+        max-width: 600px;
+        max-height: 600px;
+        margin: 0;
+    }
+    .home h3{
+        font-size: 28px;
+    }
+    .home h1{
+        font-size: 100px;
+        line-height: 116px;
+        margin-bottom: 30px;
+        width: 600px;
+    }
+    .home .text{
+        line-height: 50px;
+        margin: 0;
+        width: 50vw;
+    }
 }

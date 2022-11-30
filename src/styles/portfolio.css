@@ -1,3 +1,11 @@
+.MoiImg{
+    display: none;
+    width: 25%;
+    max-width: 500px;
+    border: 4px solid rgba(21, 82, 99, 0.473);
+    margin: 2%;
+}
+
 .portfolio H2{
     text-align: center;
     font-family: 'poppins-extrabold';  
@@ -11,45 +19,42 @@
     margin: 0 2vw 0 2vw;
 }
 
-.portfolio img{
+.portfolio .project img{
     width: 100%;
 }
-
 .portfolio .rafale{
-    margin-left: 8vw;
-    margin-top: -14vw;
+    margin-left: 4vw;
+    margin-top: -12vw;
 }
-
 .portfolio .trainingStudio{
     margin-left: 16vw;
-    margin-top: -14vw;
+    margin-top: -12vw;
 }
-
 .portfolio .capiCrea{
     margin-left: 24vw;
-    margin-top: -14vw;
+    margin-top: -12vw;
 }
-
 .portfolio .montBlanc {
     margin-left: 32vw;
-    margin-top: -14vw;
+    margin-top: -12vw;
 }
 
 
 /* animation */
 
-.portfolio img:hover{
+.portfolio .project img:hover{
     border: 2px solid var(--orange);
     position: relative;
     box-shadow: 5px 5px 6px 5px rgba(0, 0, 0, 0.59);
-    width: 85vw;
-    margin-left: 5vw;
+    width: 70vw;
+    /* margin-left: 5vw; */
 }
 
 /* Outlet */
 
 .portfolio .description{
     margin: 3vw;
+    width: 87vw;
 }
 
 .portfolio .description h4{
@@ -63,3 +68,65 @@
     font-size: 5vw;
 }
 
+@media screen and (min-width: 1024px) {
+    .portfolio h2{
+        font-size: 6vw;
+        text-align: left;
+        padding-left: 2%;
+    }
+    /*******/
+    .portfolio .project div{
+        display: grid;
+        max-height: 500px;
+    }
+    .portfolio .project img{
+        width: 40%;
+        max-width: 1000px;
+    }
+    .portfolio .rafale{
+        margin-left: 4vw;
+        margin-top: -10vw;
+    }
+    .portfolio .trainingStudio{
+        margin-left: 8vw;
+        margin-top: -10vw;
+    }
+    .portfolio .capiCrea{
+        margin-left: 12vw;
+        margin-top: -10vw;
+    }
+    .portfolio .montBlanc {
+        margin-left: 16vw;
+        margin-top: -10vw;
+    }
+    /*******/
+    .portfolio{
+        display: flex;
+        align-items: center;
+        height: 79vh;
+    }
+    .portfolio .description h4, .portfolio .description p{
+        font-size: 20px;
+    }
+    .portfolio .project{
+        display: flex;
+    }
+    .portfolio .description{
+        position: absolute;
+        right: 0;
+        width: 20vw;
+    }
+    /* animation */
+    .portfolio .project img:hover{
+        border: 2px inset var(--orange);
+        position: relative;
+        box-shadow: 5px 5px 6px 5px rgba(0, 0, 0, 0.59);
+        width: calc(40% - 8px);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .portfolio .MoiImg{
+        display: inline;
+    }
+}

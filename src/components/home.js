@@ -4,7 +4,7 @@ import Moi from '../assets/images/profile-pic.png';
 
 function Home () {
     return (
-        <div className='content'>
+        <div className='home'>
             <img src={Moi} alt="c'est moi" />
             <div className='text'>
                 <h3>Bienvenue sur mon portfolio</h3>

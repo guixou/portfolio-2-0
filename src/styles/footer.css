@@ -19,3 +19,11 @@
     flex-wrap: wrap;
     margin-top: 10%;
 }
+
+
+@media screen and (min-width: 1024px){
+    .footer {
+        justify-content: space-between;
+        margin: 2% 40% 0 2%;
+    }
+}
