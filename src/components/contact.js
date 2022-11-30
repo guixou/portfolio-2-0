@@ -4,6 +4,7 @@ import ComputerBg from '../assets/images/computerBg.jpg'
 import Copy from '../assets/svg/copy.svg'
 
 function contact() {
+      
     return (
         <div className='contact'>
             <div className='description'>
@@ -20,7 +21,7 @@ function contact() {
             </div>
             <div className='mail'>
                 <h3>Contact par mail :</h3>
-                <a href="">Pro.Guillaume.Picard@gmail.com <img src={Copy} alt="copier l'email" /></a>
+                <a href="#" value="Pro.Guillaume.Picard@gmail.com">Pro.Guillaume.Picard@gmail.com <img src={Copy} alt="copier l'email" /></a>
                 <p>Localisé sur Le Mans 72</p>
             </div>
         </div>

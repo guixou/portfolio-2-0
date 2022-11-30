@@ -1,11 +1,65 @@
+.portfolio H2{
+    text-align: center;
+    font-family: 'poppins-extrabold';  
+    font-size: 15vw;
+    margin-top: 0;
+    margin-bottom: 6px;
+}
+
+.project{
+    width: 64vw;
+    margin: 0 2vw 0 2vw;
+}
+
 .portfolio img{
     width: 100%;
 }
 
+.portfolio .rafale{
+    margin-left: 8vw;
+    margin-top: -14vw;
+}
+
+.portfolio .trainingStudio{
+    margin-left: 16vw;
+    margin-top: -14vw;
+}
+
+.portfolio .capiCrea{
+    margin-left: 24vw;
+    margin-top: -14vw;
+}
+
+.portfolio .montBlanc {
+    margin-left: 32vw;
+    margin-top: -14vw;
+}
+
+
+/* animation */
+
+.portfolio img:hover{
+    border: 2px solid var(--orange);
+    position: relative;
+    box-shadow: 5px 5px 6px 5px rgba(0, 0, 0, 0.59);
+    width: 85vw;
+    margin-left: 5vw;
+}
+
+/* Outlet */
+
+.portfolio .description{
+    margin: 3vw;
+}
+
 .portfolio .description h4{
-    font-family: 'poppins-extrabold';   
+    font-family: 'poppins-extrabold';  
+    font-size: 10vw; 
+    margin: 0;
 }
 
 .portfolio .description p{
     font-family: 'poppins-medium';   
+    font-size: 5vw;
 }
+

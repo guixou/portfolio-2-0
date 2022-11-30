@@ -1,10 +1,11 @@
 import Download from '../assets/svg/download.svg';
 import "../styles/cv.css"
+import Cv from '../assets/pdf/cv.pdf'
 
 function cv() {
     return (
         <div className='cv'>
-            <a href="">Télécharger <img src={Download} alt="" /></a>
+            <a href="CV.pdf" download={Cv}>Télécharger <img src={Download} alt="Télécharger mon CV" /></a>
             <a href="">Voir en ligne</a>
         </div>
     );

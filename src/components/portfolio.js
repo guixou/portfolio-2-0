@@ -12,11 +12,11 @@ function portfolio() {
         <div className='portfolio'>
             <h2>Portfolio</h2>
             <div className='project'>
-                <Link to="leLocal"><img src={LeLocal} alt="" /></Link>
-                <Link to="rafale"><img src={Rafale} alt="" /></Link>
-                <Link to="trainingStudio"><img src={TrainingStudio} alt="" /></Link>
-                <Link to="capiCrea"><img src={CapiCrea} alt="" /></Link>
-                <Link to="montBlanc"><img src={MontBlanc} alt="" /></Link>
+                <Link to="leLocal"><img src={LeLocal} alt="capturé d'écrant du site" className='leLocal'/></Link>
+                <Link to="rafale"><img src={Rafale} alt="capturé d'écrant du site" className='rafale'/></Link>
+                <Link to="trainingStudio"><img src={TrainingStudio} alt="capturé d'écrant du site" className='trainingStudio'/></Link>
+                <Link to="capiCrea"><img src={CapiCrea} alt="capturé d'écrant du site" className='capiCrea'/></Link>
+                <Link to="montBlanc"><img src={MontBlanc} alt="capturé d'écrant du site" className='montBlanc'/></Link>
             </div>
             <Outlet />
         </div>
