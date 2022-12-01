@@ -1,0 +1,311 @@
+
+/* #############################
+            ABOUT
+##############################*/
+
+#about a{
+    color: #ed563b;
+}
+
+#about{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height:100vh;
+}
+
+
+#about h3{
+    margin-top: 10%;
+    margin-bottom: 1%;
+}
+
+#about .HeaderSection{
+    margin-bottom: 50px;
+}
+
+#about article:last-child{
+    display: flex;
+    width: 70%;
+    flex-wrap: wrap;
+    margin-top: 2%;
+}
+
+#about article:last-child div{
+    width: 50%;
+}
+
+#about article:last-child div img{
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 60px;
+}
+
+#about h4{
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+#about p{
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+#about p a{
+    color: lightseagreen
+}
+
+
+/* #############################
+        inter_section_1
+##############################*/
+
+#inter_section_1{
+    background-image: url('../images/cta-bg.jpg');
+    max-height: 380px;
+    padding: 100px;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+/* #############################
+        our classes
+##############################*/
+
+
+#classes{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height:900px;
+    padding-top:100px;
+}
+
+#classes article:first-child{
+    width: 40%;
+    text-align: center;
+}
+
+#slider{
+    width: 70%;
+    display: flex;
+    margin-top: 20px;
+}
+
+#slider a{
+    color: black;
+}
+
+#slider li:hover{
+    color: #ed563b;
+}
+
+#slider li{
+    min-width: 300px;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 0px 15px 2px rgba(0,0,0,0.2);
+    padding: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    user-select: none;
+}
+
+#slider ul{
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 70px;
+}
+
+.radius{
+    border-radius: 3px;
+}
+
+#slider img{
+    margin-right: 20px;
+    vertical-align: middle;
+}
+
+
+/* #############################
+        shedules
+##############################*/
+
+#schedules{
+    background-image: url("../images/schedule-bg.jpg");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5% 0 5% 0;
+}
+
+#schedules h3{
+    color: white;   
+}
+
+#schedules div{
+    color: white;
+}
+
+.DayTable{
+    margin-top: 50px;
+    display: flex;
+}
+
+.SchedulesTable{
+    color: white;
+}
+
+.SchedulesTable td{
+    padding: 40px;
+    border: 1px solid white;
+}
+
+.SchedulesTable{
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.DayTable p:hover{
+    color: #ed563b;
+}
+
+.none{
+    opacity: 0;
+}
+
+#schedules button{
+    background: rgba(0,0,0,0);
+}
+
+#schedules button:hover{
+    color: #ed563b; 
+}
+
+
+/* #############################
+        inter_section_2
+##############################*/
+
+
+#inter_section_2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#trainers{
+    display: flex;
+    justify-content: space-around;
+    padding: 100px 200px 100px 300px;
+}
+
+.trainer{
+    width: 25%;
+    box-shadow: 0px 0px 15px 2px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+    align-items: flex-start;
+}
+
+#trainers img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#trainers h4{
+    font-size: 22px;
+    font-weight: normal;
+    margin: 0;
+}
+
+#trainers p{
+    font-weight: 300;
+}
+
+#trainers .social_media{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+/* #############################
+            contact
+##############################*/
+
+#contact{
+    display: flex;
+}
+
+#contact #map{
+    width: 50%;
+}
+
+#contact #map iframe{
+    width: 100%;
+    height: 600px;
+    border: 0;
+}
+
+
+#formulaireContact{
+    width: 50%;
+    background-image: url("../images/contact-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+    height: 500px;
+}
+
+#formulaireContact form{
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 5%;
+    background-color: white;
+    height: calc(100% - 100px);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#formulaireContact input, #formulaireContact textarea{
+    border: 1px solid lightgray;
+    border-radius: 0;
+    padding: 10px;
+    margin: 10px;
+    transition: border 1s;
+}
+
+#formulaireContact button{
+    margin: 10px;
+}
+
+#subjectMail{
+    width: 100%;
+}
+
+.inputMail{
+    width: calc(50% - 42px);
+}
+
+#formulaireContact input{
+    height: 30px;
+}
+
+#formulaireContact textarea{
+    height: calc(100% -100px);
+    width: 100%;
+}
+
+#formulaireContact input:hover, #formulaireContact textarea:hover{
+    border: 1px solid black;
+}

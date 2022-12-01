@@ -1,0 +1,125 @@
+
+
+/*########################
+        Header
+########################*/
+
+header{
+  width: 10%;
+  padding: 3%;
+  position: fixed
+}
+
+html { 
+  overflow-y: scroll; 
+}
+
+.logo{
+  width: 100%;
+}
+
+.mobil{
+  display: none;
+}
+
+
+/*########################
+        Main
+########################*/
+
+/*Masonery */
+
+/* ---- grid ---- */
+
+.grid {
+  margin-right: 2%;
+  margin-left: 15%;
+}
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .grid-item ---- */
+
+.grid-sizer,
+.grid-item {
+  width: 31.333%;
+  margin: 1%;
+}
+
+.grid-item {
+  float: left;
+  overflow: hidden;
+}
+
+.grid-item img {
+  display: block;
+  max-width: 100%;
+  transition: all 0.5s;
+}
+
+.grid-item img:hover{
+  transform: scale(1.2);
+}
+
+/*########################
+   pop up modal
+########################*/
+
+
+.modal {
+  background: rgba(26, 22, 22, 0.521);
+  width: 80%;
+  height: 90%;
+  top: 5%;
+  right: 10%;
+  position: fixed;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  color: white;
+}
+
+.modal img {
+  max-height: 95%;
+  max-width: 100%;
+  margin: auto;
+}
+
+
+.modalActive {
+  display: flex;
+
+}
+
+
+/*########################
+        responsive
+########################*/
+
+@media (max-width: 1020px) {
+  .pc{
+    display: none;
+  }
+
+  .mobil{
+    display: block;
+    margin: auto;
+  }
+
+  header{
+    position: inherit;
+    width: 50%;
+    display: flex;
+    margin: auto;
+  }
+
+  .grid{
+    margin-left: 2%;
+  }
+}

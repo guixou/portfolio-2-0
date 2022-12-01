@@ -16,7 +16,7 @@ function Content() {
     return(
         <div>
             <Routes>
-                <Route path='/' element={<Home />} />
+                <Route path='/*' element={<Home />} />
                 <Route path='/contact' element={<Contact />} />
                 <Route path='/cv' element={<Cv />} />
                 <Route path='/parcour' element={<Parcours />} />

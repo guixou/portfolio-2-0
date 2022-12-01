@@ -6,7 +6,7 @@ function cv() {
     return (
         <div className='cv'>
             <a href="CV.pdf" download={Cv}>Télécharger <img src={Download} alt="Télécharger mon CV" /></a>
-            <a href="">Voir en ligne</a>
+            <a href={Cv} target = "_blank">Voir en ligne</a>
         </div>
     );
 }

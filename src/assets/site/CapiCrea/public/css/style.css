@@ -1,0 +1,121 @@
+/*########################
+        Header
+########################*/
+
+
+header img{
+        position: absolute;
+        width: 15vh;
+        top: 9%;
+        left: 20%;
+}
+
+/*########################
+        Main
+########################*/
+
+/* background*/ 
+body{
+        background-color: #2a2f3d;
+        overflow: hidden;
+}
+
+.rectangle-bck{
+        position: absolute;
+        width: 2%;
+        height: 205%;
+        left: 34%;
+        top: -40%;
+        background: #16171D;
+        border: 1px solid #000000;
+        transform: rotate(42.92deg);
+        z-index: -1;
+}
+
+.carré-bck{
+        position: absolute;
+        width: 92%;
+        height: 290%;
+        left: 35%;
+        top: -23%; 
+        background: #16171D;
+        z-index: -2;
+        transform: rotate(42.92deg);
+}
+/* decoration */
+
+.glow{
+        border: 1px solid #F5C249;
+        box-sizing: border-box;
+        position: absolute;
+        width: 10vh;
+        height: 10vh;
+}
+
+.carré1{
+        left: 22%;
+        top: 93%;
+}
+
+.carré2{
+        left: 39%;
+        top: -5%;
+}
+
+.carré3{
+        left: 68%;
+        top: 83%;
+}
+
+.blur{
+        position: absolute;        
+        background: rgba(97, 134, 228, 0.5);
+        filter: blur(600px);   
+        width: 20vh;
+        height: 20vh;
+}
+
+.ellipse1{
+        top: 20vh;
+        left: 44vh;
+}
+
+.ellipse2{
+        background: rgba(228, 191, 97, 0.5);
+        top: 55vh;
+        left: 150vh;
+}
+/* content*/
+main{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+}
+
+main img{
+        width: 27vh;
+        border: 1px solid #F5C249;
+        border-radius: 3vh;
+        background-color: #47484a67;
+        padding: 5%;
+}
+
+main article{
+        margin: 0 2% 0 2%;
+}
+
+main .first{
+        margin-top: 28vh;
+}
+
+main .second{
+        margin-top: 18vh;
+}
+
+main .third{
+        margin-top: 8vh;
+}
+
+/*########################
+        Footer
+########################*/

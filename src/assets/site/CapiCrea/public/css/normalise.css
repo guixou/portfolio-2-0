@@ -1,0 +1,26 @@
+/* font */
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(../font/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url(../font/Helvetica/_H_HelveticaNeueInterface_0.ttf);
+}
+
+html {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Helvetica';
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
