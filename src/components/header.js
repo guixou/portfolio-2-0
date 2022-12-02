@@ -12,23 +12,24 @@ function Header() {
     const [isOpen, setIsOpen] = useState(false)
     let [sizeScreen, setSizeSreen] = useState(true)
     
-        function handleResize() {
-            if (window.innerWidth > 1023) {
-                setSizeSreen(true)
-            } else {
-                setSizeSreen(false)
-            }
-        
+    function handleResize() {
+        if (window.innerWidth > 1023) {
+            setSizeSreen(true)
+        } else {
+            setSizeSreen(false)
         }
-        window.addEventListener('resize', handleResize)
+    
+    }
+    window.addEventListener('resize', handleResize)
+    window.addEventListener('load', handleResize)
     
     return sizeScreen ? (
 
         <div className='headerPC'>
-            <h2>guillaume picard</h2>
+            <h2>Guillaume Picard</h2>
             <nav>
                 <Link to="/">Accueil</Link>
-                <Link to="/parcour">Parcours</Link>
+                <Link to="/parcours">Parcours</Link>
                 <Link to="/portfolio">Portfolio</Link>
                 <Link to="/contact">Contact</Link>
             </nav>
@@ -53,7 +54,7 @@ function Header() {
                     <div className='menuBg'>
                         <nav>
                             <Link to="/">Accueil</Link>
-                            <Link to="/parcour">Parcour</Link>
+                            <Link to="/parcours">Parcour</Link>
                             <Link to="/portfolio">Portfolio</Link>
                             <Link to="/contact">Contact</Link>
                         </nav>
@@ -63,7 +64,7 @@ function Header() {
                                 <img src={Linkedin} alt="acéder à mon Linkedin" />
                             </a>
                             <Link to="/cv">
-                                <img src={Cv} alt="acéder à Mon Cv" />
+                                <img src={Cv} alt="accéder à Mon Cv" />
                             </Link>
                             <a href="https://github.com/guixou">
                                 <img src={Github} alt="acéder à mon Github" />

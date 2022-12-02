@@ -16,11 +16,11 @@ function portfolio() {
                 <h2>Portfolio</h2>
                 <div className='project'>
                     <div>
-                        <Link to="leLocal"><img src={LeLocal} alt="capturé d'écrant du site" className='leLocal'/></Link>
-                        <Link to="rafale"><img src={Rafale} alt="capturé d'écrant du site" className='rafale'/></Link>
-                        <Link to="trainingStudio"><img src={TrainingStudio} alt="capturé d'écrant du site" className='trainingStudio'/></Link>
-                        <Link to="capiCrea"><img src={CapiCrea} alt="capturé d'écrant du site" className='capiCrea'/></Link>
-                        <Link to="montBlanc"><img src={MontBlanc} alt="capturé d'écrant du site" className='montBlanc'/></Link>
+                        <Link to="leLocal"><img src={LeLocal} alt="capture d'écran du site le Local" className='leLocal'/></Link>
+                        <Link to="rafale"><img src={Rafale} alt="capture d'écran du site rafale" className='rafale'/></Link>
+                        <Link to="trainingStudio"><img src={TrainingStudio} alt="capture d'écran du site training studio" className='trainingStudio'/></Link>
+                        <Link to="capiCrea"><img src={CapiCrea} alt="capture d'écran du site capi crea" className='capiCrea'/></Link>
+                        <Link to="montBlanc"><img src={MontBlanc} alt="capture d'écran du site mont blanc" className='montBlanc'/></Link>
                     </div>
                     <Outlet />
                 </div>

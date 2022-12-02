@@ -80,7 +80,7 @@
         max-height: 500px;
     }
     .portfolio .project img{
-        width: 40%;
+        width: 60%;
         max-width: 1000px;
     }
     .portfolio .rafale{
@@ -121,7 +121,7 @@
         border: 2px inset var(--orange);
         position: relative;
         box-shadow: 5px 5px 6px 5px rgba(0, 0, 0, 0.59);
-        width: calc(40% - 8px);
+        width: calc(60% - 8px);
     }
 }
 

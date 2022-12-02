@@ -19,7 +19,7 @@ function Content() {
                 <Route path='/*' element={<Home />} />
                 <Route path='/contact' element={<Contact />} />
                 <Route path='/cv' element={<Cv />} />
-                <Route path='/parcour' element={<Parcours />} />
+                <Route path='/parcours' element={<Parcours />} />
                 <Route path='/portfolio/' element={<Portfolio />}>
                     <Route path='/portfolio/leLocal' element={<LeLocal/>}/>
                     <Route path='/portfolio/rafale' element={<Rafal/>}/>

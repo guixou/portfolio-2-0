@@ -11,7 +11,7 @@ function footer () {
             </div>
 
             <div className='copyright'>
-                <p>Tout droit réservé Guix</p>
+                <p>Tout drois réservé Guix</p>
                 <img src={C} alt="copyright" />
             </div>
         </div>

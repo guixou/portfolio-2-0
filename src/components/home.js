@@ -8,7 +8,7 @@ function Home () {
             <img src={Moi} alt="c'est moi" />
             <div className='text'>
                 <h3>Bienvenue sur mon portfolio</h3>
-                <h1>Développeur Intégrateur web</h1>
+                <h1>Développeur Intégrateur Web</h1>
                 <h3>Junior en freelance</h3>
             </div>
         </div> 
