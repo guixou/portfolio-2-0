@@ -2,9 +2,10 @@ import React from 'react';
 import '../styles/contact.css'
 import ComputerBg from '../assets/images/computerBg.jpg'
 import Copy from '../assets/svg/copy.svg'
+import {CopyToClipboard} from 'react-copy-to-clipboard';
 
 function contact() {
-      
+
     return (
         <div className='contact'>
             <img src={ComputerBg} alt="ordinateur" className='computerBg' />
@@ -22,7 +23,9 @@ function contact() {
             </div>
             <div className='mail'>
                 <h3>Contact par mail :</h3>
-                <a href="#" value="Pro.Guillaume.Picard@gmail.com">Pro.Guillaume.Picard@gmail.com <img src={Copy} alt="copier l'email" /></a>
+                <CopyToClipboard text="Pro.Guillaume.Picard@gmail.com">
+                    <a href="#" value="Pro.Guillaume.Picard@gmail.com">Pro.Guillaume.Picard@gmail.com <img src={Copy} alt="copier l'email" /></a>
+                </CopyToClipboard>
                 <p>Localisé sur Le Mans 72</p>
             </div>
         </div>
