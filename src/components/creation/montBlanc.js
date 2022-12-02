@@ -1,6 +1,6 @@
 import React from 'react';
 
-function montBlanc() {
+export default function MontBlanc() {
     return (
         <div className='description'>
             <h4>Mont Blanc</h4>
@@ -11,5 +11,3 @@ function montBlanc() {
         </div>
     );
 }
-
-export default montBlanc;

@@ -2,7 +2,7 @@ import Arrow from '../assets/svg/arrowLangue.svg';
 import C from '../assets/svg/copyright.svg'
 import '../styles/footer.css'
 
-function footer () {
+export default function Footer () {
     return (
         <div className='footer'>
             <div className='language'>
@@ -17,5 +17,3 @@ function footer () {
         </div>
     )
 }
-
-export default footer

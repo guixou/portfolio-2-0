@@ -1,8 +1,8 @@
-import Header from './header.js';
-import Footer from './footer.js';
-import Content from './content'
+import Header from './Header.js';
+import Footer from './Footer.js';
+import Content from './Content'
 
-function body () {
+export default function Body () {
     return (
         <div>
             <header>
@@ -17,5 +17,3 @@ function body () {
         </div>
     );
 }
-
-export default body;

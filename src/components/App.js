@@ -1,12 +1,10 @@
-import Body from './body'
+import Body from './Body.js'
 import '../styles/App.css';
 
-function App() {
+export default function App() {
   return (
     <div className="App">
       <Body />
     </div>
   );
 }
-
-export default App;

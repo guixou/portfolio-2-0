@@ -2,7 +2,7 @@ import React from 'react';
 import '../styles/home.css'
 import Moi from '../assets/images/profile-pic.png';
 
-function Home () {
+export default function Home () {
     return (
         <div className='home'>
             <img src={Moi} alt="c'est moi" />
@@ -14,6 +14,3 @@ function Home () {
         </div> 
     );
 }
-
-
-export default Home

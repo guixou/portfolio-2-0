@@ -4,7 +4,7 @@ import ComputerBg from '../assets/images/computerBg.jpg'
 import Copy from '../assets/svg/copy.svg'
 import {CopyToClipboard} from 'react-copy-to-clipboard';
 
-function contact() {
+export default function Contact() {
 
     return (
         <div className='contact'>
@@ -23,13 +23,11 @@ function contact() {
             </div>
             <div className='mail'>
                 <h3>Contact par mail :</h3>
-                <CopyToClipboard text="Pro.Guillaume.Picard@gmail.com">
-                    <a href="#" value="Pro.Guillaume.Picard@gmail.com">Pro.Guillaume.Picard@gmail.com <img src={Copy} alt="copier l'email" /></a>
+                <CopyToClipboard text="pro.guillaume.picard@gmail.com">
+                    <a href="#" >Pro.Guillaume.Picard@gmail.com <img src={Copy} alt="copier l'email" /></a>
                 </CopyToClipboard>
                 <p>Localisé sur Le Mans 72</p>
             </div>
         </div>
     );
 }
-
-export default contact;

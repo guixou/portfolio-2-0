@@ -6,7 +6,7 @@ import ValeoImg from '../assets/images/parcour/ValeoImg.jpg';
 // import EnedisImg from '../assets/images/parcour/EnedisImg.jpg';
 import '../styles/parcours.css'
 
-function parcours() {
+export default function Parcours() {
     return (
         <div className='parcours'> 
             <h3>Mon parcours</h3>
@@ -76,5 +76,3 @@ function parcours() {
         </div>
     );
 }
-
-export default parcours;

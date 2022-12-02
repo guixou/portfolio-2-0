@@ -8,7 +8,7 @@ import DisableNav from '../assets/svg/disableNav.svg'
 import '../styles/header.css'
 import {Link} from "react-router-dom"
 
-function Header() {
+export default function Header() {
     const [isOpen, setIsOpen] = useState(false)
     let [sizeScreen, setSizeSreen] = useState(true)
     
@@ -93,5 +93,3 @@ function Header() {
     );
 
 }
-
-export default Header

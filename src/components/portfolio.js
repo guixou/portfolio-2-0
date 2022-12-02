@@ -8,7 +8,7 @@ import TrainingStudio from '../assets/images/réalisation/trainingStudio.jpg'
 import MiniMoi from '../assets/images/mini-moi.png'
 import { Link, Outlet} from "react-router-dom"
 
-function portfolio() {
+export default function Portfolio() {
     return (
         <div className='portfolio'>
             <img className='MoiImg' src={MiniMoi} alt="c'est toujours moi" />
@@ -28,5 +28,3 @@ function portfolio() {
         </div>
     );
 }
-
-export default portfolio;

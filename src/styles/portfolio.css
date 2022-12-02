@@ -80,7 +80,8 @@
         max-height: 500px;
     }
     .portfolio .project img{
-        width: 60%;
+        width: 500px;
+        height: 250px;
         max-width: 1000px;
     }
     .portfolio .rafale{
@@ -121,7 +122,12 @@
         border: 2px inset var(--orange);
         position: relative;
         box-shadow: 5px 5px 6px 5px rgba(0, 0, 0, 0.59);
-        width: calc(60% - 8px);
+        width: calc(500px - 4px);
+        height: calc(250px - 4px);
+    }
+    .portfolio .montBlanc:hover{
+        margin-bottom: 2px;
+        margin-right: -6px;
     }
 }
 

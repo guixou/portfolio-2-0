@@ -1,18 +1,18 @@
 import React from 'react';
-import Home from './home';
-import Contact from './contact';
-import Cv from './cv'
-import Parcours from './parcours';
-import Portfolio from './portfolio';
-import LeLocal from './creation/leLocal';
-import Rafal from './creation/rafale';
-import TrainingStudio from './creation/trainingStudio';
-import CapiCrea from './creation/capiCrea';
-import MontBlanc from './creation/montBlanc';
+import Home from './Home';
+import Contact from './Contact';
+import Cv from "./Cv";
+import Parcours from './Parcours';
+import Portfolio from './Portfolio';
+import LeLocal from './creation/LeLocal';
+import Rafal from './creation/Rafale';
+import TrainingStudio from './creation/TrainingStudio';
+import CapiCrea from './creation/CapiCrea';
+import MontBlanc from './creation/MontBlanc';
 import '../styles/content.css';
 import {Routes, Route} from "react-router-dom"
 
-function Content() {
+export default function Content() {
     return(
         <div>
             <Routes>
@@ -31,5 +31,3 @@ function Content() {
         </div>
     );
 }
-
-export default Content;

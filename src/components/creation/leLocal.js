@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../styles/portfolio.css'
 
-function leLocal() {
+export default function LeLocal() {
     return (
         <div className='description'>
             <h4>Le local</h4>
@@ -12,5 +12,3 @@ function leLocal() {
         </div>
     );
 }
-
-export default leLocal;
