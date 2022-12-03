@@ -36,7 +36,7 @@ export default function Parcours() {
                                 3WAcademy
                             </h4>
 
-                            <p>Base du developpement web HTML/CSS/JS/PHP/SQL. Réalisation de divers projets ainsi qu'un projet complet comprenant tout ces langages</p>
+                            <p>Base du developpement web HTML/CSS/JS/PHP/SQL. Réalisation de divers projets ainsi qu'un projet complet comprenant tous ces langages</p>
                             <p>Obtention de mon diplôme de Développeur Intégrateur en réalisation d’applications Web</p>
                         </div>
                     </div>

@@ -15,7 +15,7 @@
 
 .home .text{
     margin-left: 5vw;
-    line-height: 10vw;
+    line-height: 12vw;
 }
 
 .home h3{
@@ -41,8 +41,8 @@
         align-items: center;
     }
     .home img{
-        width: 31vw;
-        height: 31vw;
+        width: 300px;
+        height: 300px;
         max-width: 600px;
         max-height: 600px;
         margin: 0;
@@ -60,5 +60,12 @@
         line-height: 50px;
         margin: 0;
         width: 50vw;
+    }
+}
+
+@media screen and (min-width: 1250px){
+    .home img{
+        width: 550px;
+        height: 550px;
     }
 }

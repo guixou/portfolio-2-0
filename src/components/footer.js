@@ -11,7 +11,7 @@ export default function Footer () {
             </div>
 
             <div className='copyright'>
-                <p>Tout drois réservé Guix</p>
+                <p>Tous droits réservés Guix</p>
                 <img src={C} alt="copyright" />
             </div>
         </div>

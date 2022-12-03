@@ -46,7 +46,6 @@
     border: 2px solid var(--orange);
     position: relative;
     box-shadow: 5px 5px 6px 5px rgba(0, 0, 0, 0.59);
-    width: 70vw;
     /* margin-left: 5vw; */
 }
 
@@ -55,6 +54,8 @@
 .portfolio .description{
     margin: 3vw;
     width: 87vw;
+    display: flex;
+    flex-direction: column;
 }
 
 .portfolio .description h4{
@@ -66,6 +67,10 @@
 .portfolio .description p{
     font-family: 'poppins-medium';   
     font-size: 5vw;
+}
+
+.portfolio .description a{
+    font-size: 4vw;
 }
 
 @media screen and (min-width: 1024px) {
@@ -84,21 +89,26 @@
         height: 250px;
         max-width: 1000px;
     }
+
+    .portfolio .project{
+        margin-right: 5px;
+    }
+
     .portfolio .rafale{
         margin-left: 4vw;
-        margin-top: -10vw;
+        margin-top: -180px;
     }
     .portfolio .trainingStudio{
         margin-left: 8vw;
-        margin-top: -10vw;
+        margin-top: -180px;
     }
     .portfolio .capiCrea{
         margin-left: 12vw;
-        margin-top: -10vw;
+        margin-top: -180px;
     }
     .portfolio .montBlanc {
         margin-left: 16vw;
-        margin-top: -10vw;
+        margin-top: -180px;
     }
     /*******/
     .portfolio{
@@ -109,13 +119,17 @@
     .portfolio .description h4, .portfolio .description p{
         font-size: 20px;
     }
+    .portfolio .description a{
+        font-size: 15px;
+    }
+
     .portfolio .project{
         display: flex;
     }
     .portfolio .description{
         position: absolute;
         right: 0;
-        width: 20vw;
+        width: 28vw;
     }
     /* animation */
     .portfolio .project img:hover{
@@ -131,8 +145,12 @@
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1500px) {
     .portfolio .MoiImg{
         display: inline;
+    }
+
+    .project .description{
+        width: 16vw;
     }
 }
