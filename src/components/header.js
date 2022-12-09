@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from 'react';
-import ReactDOM from "react-dom";
+import React, { useState } from 'react';
 import Linkedin from '../assets/svg/linkedin.svg';
 import Cv from '../assets/svg/cv.svg';
 import Github from '../assets/svg/github.svg';
@@ -11,19 +10,28 @@ import {Link} from "react-router-dom"
 export default function Header() {
     const [isOpen, setIsOpen] = useState(false)
     let [sizeScreen, setSizeSreen] = useState(true)
+    let [isRendre, setIsRender] = useState(true)
     
     function handleResize() {
         if (window.innerWidth > 1023) {
             setSizeSreen(true)
+            setIsRender(false)
         } else {
             setSizeSreen(false)
+            setIsRender(false)
         }
     
     }
     window.addEventListener('resize', handleResize)
     window.addEventListener('load', handleResize)
-    
-    return sizeScreen ? (
+
+
+    return isRendre ? (
+        <div>
+
+        </div>
+
+    ) : sizeScreen ? (
 
         <div className='headerPC'>
             <h2>Guillaume Picard</h2>
