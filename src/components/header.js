@@ -9,54 +9,35 @@ import {Link} from "react-router-dom"
 
 export default function Header() {
     const [isOpen, setIsOpen] = useState(false)
-    let [sizeScreen, setSizeSreen] = useState(true)
-    let [isRendre, setIsRender] = useState(true)
     
-    function handleResize() {
-        if (window.innerWidth > 1023) {
-            setSizeSreen(true)
-            setIsRender(false)
-        } else {
-            setSizeSreen(false)
-            setIsRender(false)
-        }
+
+    return  isOpen ? (
+
+        <React.Fragment>
+            
+            <div className='headerPC'>
+                <h2>Guillaume Picard</h2>
+                <nav>
+                    <Link to="/">Accueil</Link>
+                    <Link to="/parcours">Parcours</Link>
+                    <Link to="/portfolio">Portfolio</Link>
+                    <Link to="/contact">Contact</Link>
+                </nav>
     
-    }
-    window.addEventListener('resize', handleResize)
-    window.addEventListener('load', handleResize)
-
-
-    return isRendre ? (
-        <div>
-
-        </div>
-
-    ) : sizeScreen ? (
-
-        <div className='headerPC'>
-            <h2>Guillaume Picard</h2>
-            <nav>
-                <Link to="/">Accueil</Link>
-                <Link to="/parcours">Parcours</Link>
-                <Link to="/portfolio">Portfolio</Link>
-                <Link to="/contact">Contact</Link>
-            </nav>
-
-            <div className='reseau'>
-                <a href="https://www.linkedin.com/in/guillaume-picard-9513aa1b5/">
-                    <img src={Linkedin} alt="acéder à mon Linkedin" />
-                </a>
-                <Link to="/cv">
-                    <img src={Cv} alt="acéder à Mon Cv" />
-                </Link>
-                <a href="https://github.com/guixou">
-                    <img src={Github} alt="acéder à mon Github" />
-                </a>
+                <div className='reseau'>
+                    <a href="https://www.linkedin.com/in/guillaume-picard-9513aa1b5/">
+                        <img src={Linkedin} alt="acéder à mon Linkedin" />
+                    </a>
+                    <Link to="/cv">
+                        <img src={Cv} alt="acéder à Mon Cv" />
+                    </Link>
+                    <a href="https://github.com/guixou">
+                        <img src={Github} alt="acéder à mon Github" />
+                    </a>
+                </div>
             </div>
-        </div>
-
-    ) : isOpen ? (
-            <div className='header'>
+    
+            <div className='headerMobile'>
                 <h2>guillaume picard</h2>
                 <div className='menu'>
                     <div className='menuBg'>
@@ -88,16 +69,45 @@ export default function Header() {
                     </button>
                 </div>
             </div>
+        </React.Fragment>
+
     ) : (
-        <div className='header headerActive'>
-            <h2>Guillaume picard</h2>
-            <button
-                className='disableNav'
-                onClick={() => setIsOpen(true)}
-            >
-                <img src={ActiveNav} alt="" />
-            </button>
-        </div>
+        
+        <React.Fragment>
+
+            <div className='headerPC'>
+                <h2>Guillaume Picard</h2>
+                <nav>
+                    <Link to="/">Accueil</Link>
+                    <Link to="/parcours">Parcours</Link>
+                    <Link to="/portfolio">Portfolio</Link>
+                    <Link to="/contact">Contact</Link>
+                </nav>
+    
+                <div className='reseau'>
+                    <a href="https://www.linkedin.com/in/guillaume-picard-9513aa1b5/">
+                        <img src={Linkedin} alt="acéder à mon Linkedin" />
+                    </a>
+                    <Link to="/cv">
+                        <img src={Cv} alt="acéder à Mon Cv" />
+                    </Link>
+                    <a href="https://github.com/guixou">
+                        <img src={Github} alt="acéder à mon Github" />
+                    </a>
+                </div>
+            </div>
+
+            <div className='headerMobile headerActive'>
+                <h2>Guillaume picard</h2>
+                <button
+                    className='disableNav'
+                    onClick={() => setIsOpen(true)}
+                >
+                    <img src={ActiveNav} alt="" />
+                </button>
+            </div>
+
+        </React.Fragment>
     );
 
 }
