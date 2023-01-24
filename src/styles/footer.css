@@ -20,6 +20,14 @@
     margin-top: 10%;
 }
 
+.language select{
+    background: none;
+    border: none;
+}
+
+.language label{
+    display: flex;
+}
 
 @media screen and (min-width: 1024px){
     .footer {

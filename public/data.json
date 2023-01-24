@@ -1,10 +1,22 @@
 {
-    "Language":[
-        {
-            "Language": "Français"
-        },
-        {
-            "Language": "English"
-        }
-    ]
+  "Français": {
+      "footer": {
+        "copyright" : "Tous droits réservés Guix",
+        "language" : "Langage sélectionné : Français"
+      },
+      "header" : {
+        "accueil" : "Accueil",
+        "parcours" : "Parcours"
+      }
+  },
+  "English": {
+      "footer": {
+        "copyright" : "All rights reserved Guix",
+        "language" : "Selected language : English"
+      },
+      "header" : {
+        "accueil" : "Home",
+        "parcours" : "Career"
+      }
+  }
 }
