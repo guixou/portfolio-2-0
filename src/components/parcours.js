@@ -1,27 +1,31 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import ReactImg from '../assets/images/parcour/reactImg.jpg';
 import WaImg from '../assets/images/parcour/3WAImg.jpg';
 import BtsImg from '../assets/images/parcour/BTSImg.jpg';
 import ValeoImg from '../assets/images/parcour/ValeoImg.jpg';
 // import EnedisImg from '../assets/images/parcour/EnedisImg.jpg';
 import '../styles/parcours.css'
+import { LanguageValue } from '../context/LanguageValue';
+import { DataLanguage } from '../context/DataLanguage';
 
 export default function Parcours() {
+    
+    const {language} = useContext(LanguageValue);
+    const {data} = useContext(DataLanguage);
+
     return (
         <div className='parcours'> 
-            <h3>Mon parcours</h3>
+            {data ? (<h3>{data[language].parcours.title}</h3>) : (<p>Loading data...</p>)}
             <div className='tree'>
                 <section>
                     <div className='react'>
                         <img src={ReactImg} alt="logo react" />
                         <div className='description'>
-                            <h4>
-                                2021-2022 <br/>
-                                Formation : <br/>
-                                ReactJs et Conception d'Interface Utilisateur
-                            </h4>
+                            <h4>2021-2022 </h4>
+                            {data ? (<h4>{data[language].parcours.détail.react.title1}</h4>) : (<p>Loading data...</p>)}
+                            {data ? (<h4>{data[language].parcours.détail.react.title2}</h4>) : (<p>Loading data...</p>)}
 
-                            <p>Apprentissage du framework ReactJS sur OpenClassroom en autodidacte, utilisation de useState, useEffect et de react-router-dom</p>
+                            {data ? (<h4>{data[language].parcours.détail.react.title2}</h4>) : (<p>Loading data...</p>)}
                             <p>Apprentissage de Figma pour la Conception d'Interface Utilisateur et divers outils qui m'ont permis de réaliser mon portfolio</p>
                         </div>
                     </div>

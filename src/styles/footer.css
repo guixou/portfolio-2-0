@@ -20,13 +20,20 @@
     margin-top: 10%;
 }
 
-.language select{
-    background: none;
-    border: none;
+.language button{
+    background-color: var(--white);
+    border: 1px solid var(--black);
+    width: 100px;
+    margin: 10px 20px 10px 20px;
+    font-family: 'Poppins-medium';
+    border-radius: 3px;
+    box-shadow:2px 2px 7px -3px rgba(0,0,0,0.75);
 }
 
-.language label{
-    display: flex;
+.language button:hover{
+    box-shadow: none;
+    background-color: var(--orange);
+    border-radius: 0;
 }
 
 @media screen and (min-width: 1024px){

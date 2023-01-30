@@ -1,45 +1,31 @@
 import Arrow from '../assets/svg/arrowLangue.svg';
 import C from '../assets/svg/copyright.svg'
 import '../styles/footer.css'
-import React, { useState, useEffect } from 'react';
-
+import React, { useState, useEffect, useContext } from 'react';
+import { LanguageValue } from '../context/LanguageValue';
+import { DataLanguage } from '../context/DataLanguage';
 
 
 export default function Footer () {
 
 
-    // charger/utiliser mon Json
-    const [data, setData] = useState(null);
 
-    useEffect(() => {
-        async function fetchData() {
-          const response = await fetch('data.json');
-          const json = await response.json();
-          setData(json);
-        }
-        fetchData();
-      }, []);
+    //import du context
 
-    //menue de langue
-        const [selectedLanguage, setSelectedLanguage] = useState('Français');
-      
-        const handleLanguageChange = (event) => {
-          setSelectedLanguage(event.target.value);
-        };
+    const {toggleLanguage, language} = useContext(LanguageValue);
 
+    const {data} = useContext(DataLanguage)
 
     return (
         <React.Fragment>
             <div className='footer'>
+
                 <div className='language'>
-                    <label>
-                        <select value={selectedLanguage} onChange={handleLanguageChange}>
-                            <option className='selectLanguage' value="Français">Français</option>
-                            <option className='selectLanguage' value="English">English</option>
-                        </select>
-                    </label>
+
+                    <button onClick={toggleLanguage}>{language}</button>
+                    
                     {data ? (
-                            <p>{data[selectedLanguage].footer.language}</p>
+                            <p>{data[language].footer.language}</p>
                         ) : (
                             <p>Loading data...</p>
                         )
@@ -47,8 +33,9 @@ export default function Footer () {
                 </div>
 
                 <div className='copyright'>
+                    
                     {data ? (
-                            <p>{data[selectedLanguage].footer.copyright}</p>
+                            <p>{data[language].footer.copyright}</p>
                         ) : (
                             <p>Loading data...</p>
                         )

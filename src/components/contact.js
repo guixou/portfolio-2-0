@@ -1,32 +1,40 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import '../styles/contact.css'
 import ComputerBg from '../assets/images/computerBg.jpg'
 import Copy from '../assets/svg/copy.svg'
 import {CopyToClipboard} from 'react-copy-to-clipboard';
+import { LanguageValue } from '../context/LanguageValue';
+import { DataLanguage } from '../context/DataLanguage';
 
 export default function Contact() {
+
+    //import du context
+    
+    const {language} = useContext(LanguageValue);
+    const {data} = useContext(DataLanguage);
 
     return (
         <div className='contact'>
             <img src={ComputerBg} alt="ordinateur" className='computerBg' />
             <div className='description'>
-                <h3>Création de site web :</h3>
+                
+                {data ? (<h3>{data[language].contact.tittle1}</h3>) : (<p>Loading data...</p>)}
                 <ul>
-                    <li>Création de site vitrine</li>
-                    <li>Intégration de maquette</li>
-                    <li>Création de maquette</li>
+                    {data ? (<li>{data[language].contact.contentli1}</li>) : (<p>Loading data...</p>)}
+                    {data ? (<li>{data[language].contact.contentli2}</li>) : (<p>Loading data...</p>)}
+                    {data ? (<li>{data[language].contact.contentli3}</li>) : (<p>Loading data...</p>)}
                 </ul>
-                <h3>Disponible pour tout :</h3>
+                    {data ? (<h3>{data[language].contact.tittle2}</h3>) : (<p>Loading data...</p>)}
                 <ul>
-                    <li>Projet en HTML CSS JS REACT</li>
+                    {data ? (<li>{data[language].contact.contentli4}</li>) : (<p>Loading data...</p>)}
                 </ul>
             </div>
             <div className='mail'>
-                <h3>Contact par mail :</h3>
+            {data ? (<h3>{data[language].contact.contact}</h3>) : (<p>Loading data...</p>)}
                 <CopyToClipboard text="pro.guillaume.picard@gmail.com">
                     <a href="#" >Pro.Guillaume.Picard@gmail.com <img src={Copy} alt="copier l'email" /></a>
                 </CopyToClipboard>
-                <p>Localisé sur Le Mans 72</p>
+                {data ? (<p>{data[language].contact.location}</p>) : (<p>Loading data...</p>)}
             </div>
         </div>
     );

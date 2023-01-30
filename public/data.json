@@ -4,9 +4,81 @@
         "copyright" : "Tous droits réservés Guix",
         "language" : "Langage sélectionné : Français"
       },
+
       "header" : {
         "accueil" : "Accueil",
         "parcours" : "Parcours"
+      },
+
+      "home": {
+        "welcome" : "Bienvenue sur mon portfolio",
+        "title" : "Développeur Intégrateur Web",
+        "catchPhrase" : "Créons votre avenir numérique"
+      },
+
+      "contact": {
+        "tittle1": "Création de site web :",
+        "contentli1": "Création de site vitrine",
+        "contentli2": "Intégration de maquette",
+        "contentli3": "Création de maquette",
+        "tittle2": "Disponible pour tout :",
+        "contentli4": "Projet en HTML CSS JS REACT",
+        "contact": "Contact par mail :",
+        "location": "Localisé sur Le Mans 72"
+      },
+
+      "portfolio" :{
+        "visite": "visiter le site",
+        "LeLocal": {
+          "description": "Site vitrine pour un shop de tatouage avec une page Administateur pour ajouter/modifier/supprimer des produits",
+          "conclusion": "Site fictif pour l’obtention de mon diplôme"
+        },
+        "rafale": {
+          "description": "Portfolio pour une artiste photographe",
+          "conclusion": "Utilisation des framworks Masonry et ShowImg"
+        },
+        "trainingStudio": {
+          "description": "Site vitrine pour une salle de sport fictive avec divers éléments en JS",
+          "conclusion": "Site fictif fait pendant ma formation à la 3WA"
+        },
+        "capiCreative": {
+          "description": "Pub pour une application de trading/cryptoactif",
+          "conclusion": "Site/PUB, défi intégration en moins d'une journée réussie"
+        },
+        "montBlanc": {
+          "description": "Site vitrine pour un concept de moto, design par Dimitry Kiiashko",
+          "conclusion": "Intégration qui m'a permis d'apprendre les bases de Figma"
+        }
+      },
+
+      "parcours": {
+        "title": "Mon Parcours",
+        "détail": {
+          "react": {
+            "title1": "Formation",
+            "title2": "ReactJs et Conception d'Interface Utilisateur",
+            "description1": "Apprentissage du framework ReactJS sur OpenClassroom en autodidacte, utilisation de useState, useEffect et de react-router-dom",
+            "description2": "Apprentissage de Figma pour la Conception d'Interface Utilisateur et divers outils qui m'ont permis de réaliser mon portfolio"
+          },
+
+          "3wa": {
+            "title1": "Formation",
+            "description1": "Base du developpement web HTML/CSS/JS/PHP/SQL. Réalisation de divers projets ainsi qu'un projet complet comprenant tous ces langages",
+            "description2": "Obtention de mon diplôme de Développeur Intégrateur en réalisation d’applications Web"
+          },
+          "BTS": {
+            "title1": "BTS Assistant Technique d'Ingénieur",
+            "title2": "Formation au métier de technicien process",
+            "description1": "Obtention de mon BTS ATI à la suite ce celui-ci",
+            "description2": "Formation aux automates industriels, conception 3D et à l'amélioration continue au sein d'une usine"
+          },
+          "valeo": {
+            "title1": "Alternance chez Valeo Sablé-Sur-Sarthe",
+            "title2": "Apprentissage du métier de technicien process",
+            "description1": "Acquisition du savoir-étre en entreprise, démarche 5S, fonctionnement d'une entreprise internationale",
+            "description2": "Réalisation de devis, documentation technique, divers améliorations continues en totale autonomie"
+          }
+        }
       }
   },
   "English": {
@@ -14,9 +86,81 @@
         "copyright" : "All rights reserved Guix",
         "language" : "Selected language : English"
       },
+
       "header" : {
         "accueil" : "Home",
         "parcours" : "Career"
+      },
+
+      "home": {
+        "welcome" : "Welcome on my portfolio",
+        "title" : "Web Developer Integrator",
+        "catchPhrase" : "Create your digital future"
+      },
+
+      "contact": {
+        "tittle1": "Website creation :",
+        "contentli1": "Creation of a showcase website",
+        "contentli2": "Mock-up integration",
+        "contentli3": "Creation of a mock-up",
+        "tittle2": "Available for any :",
+        "contentli4": "Project in HTML CSS JS REACT",
+        "contact": "Contact by email :",
+        "location": "Located at Le Mans, France"
+      },
+
+      "portfolio" :{
+        "visite": "visit the website",
+        "LeLocal": {
+          "description": "Showcase site for a tattoo shop with an admin page to add/edit/delete products",
+          "conclusion": "Fictitious website for my graduation"
+        },
+        "rafale": {
+          "description": "Portfolio for a photographic artist",
+          "conclusion": "Using framworks Masonry and ShowImg"
+        },
+        "trainingStudio": {
+          "description": "Showcase site for a fictitious gym with different components in JS",
+          "conclusion": "Fictitious site made during my formation at the 3WA"
+        },
+        "capiCreative": {
+          "description": "Ad for a trading/cryptoactive application",
+          "conclusion": "Site/PUB, integration challenge in less than a day"
+        },
+        "montBlanc": {
+          "description": "Showcase site for a motorcycle concept, design by Dimitry Kiiashko",
+          "conclusion": "Integration that allowed me to learn the basics of Figma"
+        }
+      },
+
+      "parcours": {
+        "title": "Mon Parcours",
+        "détail": {
+          "react": {
+            "title1": "Formation",
+            "title2": "ReactJs et Conception d'Interface Utilisateur",
+            "description1": "Apprentissage du framework ReactJS sur OpenClassroom en autodidacte, utilisation de useState, useEffect et de react-router-dom",
+            "description2": "Apprentissage de Figma pour la Conception d'Interface Utilisateur et divers outils qui m'ont permis de réaliser mon portfolio"
+          },
+
+          "3wa": {
+            "title1": "Formation",
+            "description1": "Base du developpement web HTML/CSS/JS/PHP/SQL. Réalisation de divers projets ainsi qu'un projet complet comprenant tous ces langages",
+            "description2": "Obtention de mon diplôme de Développeur Intégrateur en réalisation d’applications Web"
+          },
+          "BTS": {
+            "title1": "BTS Assistant Technique d'Ingénieur",
+            "title2": "Formation au métier de technicien process",
+            "description1": "Obtention de mon BTS ATI à la suite ce celui-ci",
+            "description2": "Formation aux automates industriels, conception 3D et à l'amélioration continue au sein d'une usine"
+          },
+          "valeo": {
+            "title1": "Alternance chez Valeo Sablé-Sur-Sarthe",
+            "title2": "Apprentissage du métier de technicien process",
+            "description1": "Acquisition du savoir-étre en entreprise, démarche 5S, fonctionnement d'une entreprise internationale",
+            "description2": "Réalisation de devis, documentation technique, divers améliorations continues en totale autonomie"
+          }
+        }
       }
   }
 }

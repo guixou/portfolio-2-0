@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import Linkedin from '../assets/svg/linkedin.svg';
 import Cv from '../assets/svg/cv.svg';
 import Github from '../assets/svg/github.svg';
@@ -6,21 +6,13 @@ import ActiveNav from '../assets/svg/activeNav.svg'
 import DisableNav from '../assets/svg/disableNav.svg'
 import '../styles/header.css'
 import {Link} from "react-router-dom"
+import Footer from './Footer';
+import { LanguageValue } from '../context/LanguageValue';
+import { DataLanguage } from '../context/DataLanguage';
 
 export default function Header() {
+
     const [isOpen, setIsOpen] = useState(false);
-
-    // charger/utiliser mon Json
-    const [data, setData] = useState(null);
-
-    useEffect(() => {
-        async function fetchData() {
-            const response = await fetch('data.json');
-            const json = await response.json();
-            setData(json);
-        }
-        fetchData();
-        }, []);
 
     // affichage airport
     const [letter, setLetter] = useState('');
@@ -46,6 +38,10 @@ export default function Header() {
       }, finalText.length * 100);
     }, []);
   
+    //import du context
+    
+    const {language} = useContext(LanguageValue);
+    const {data} = useContext(DataLanguage);
 
     return  isOpen ? (
 
@@ -54,8 +50,8 @@ export default function Header() {
             <div className='headerPC'>
                 <h2>Guillaume picard</h2>
                 <nav>
-                    <Link to="/">Accueil</Link>
-                    <Link to="/parcours">Parcours</Link>
+                    {data ? (<Link to="/">{data[language].header.accueil}</Link>) : (<p>Loading data...</p>)}
+                    {data ? (<Link to="/parcours">{data[language].header.parcours}</Link>) : (<p>Loading data...</p>)}
                     <Link to="/portfolio">Portfolio</Link>
                     <Link to="/contact">Contact</Link>
                 </nav>
@@ -78,8 +74,8 @@ export default function Header() {
                 <div className='menu'>
                     <div className='menuBg'>
                         <nav>
-                            <Link to="/">Accueil</Link>
-                            <Link to="/parcours">Parcour</Link>
+                            {data ? (<Link to="/">{data[language].header.accueil}</Link>) : (<p>Loading data...</p>)}
+                            {data ? (<Link to="/parcours">{data[language].header.parcours}</Link>) : (<p>Loading data...</p>)}
                             <Link to="/portfolio">Portfolio</Link>
                             <Link to="/contact">Contact</Link>
                         </nav>
@@ -112,10 +108,10 @@ export default function Header() {
         <React.Fragment>
 
             <div className='headerPC'>
-                <h2 id='letter3'>{finalText.slice(0, pas) + letter}</h2>
+                <h2>{finalText.slice(0, pas) + letter}</h2>
                 <nav>
-                    <Link to="/">Acceuil</Link>
-                    <Link to="/parcours">Parcours</Link>
+                    {data ? (<Link to="/">{data[language].header.accueil}</Link>) : (<p>Loading data...</p>)}
+                    {data ? (<Link to="/parcours">{data[language].header.parcours}</Link>) : (<p>Loading data...</p>)}
                     <Link to="/portfolio">Portfolio</Link>
                     <Link to="/contact">Contact</Link>
                 </nav>
