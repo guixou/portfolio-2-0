@@ -29,25 +29,46 @@
 
       "portfolio" :{
         "visite": "visiter le site",
-        "LeLocal": {
+        "test": {
+          "description": "",
+          "conclusion": "",
+          "link": "",
+          "gitHub": ""
+        },
+        "leLocal": {
+          "title" : "Le Local",
           "description": "Site vitrine pour un shop de tatouage avec une page Administateur pour ajouter/modifier/supprimer des produits",
-          "conclusion": "Site fictif pour l’obtention de mon diplôme"
+          "conclusion": "Site fictif pour l’obtention de mon diplôme",
+          "link": "https://guillaumepic.sites.3wa.io/ProjetFinal/index.php",
+          "gitHub": "https://github.com/guixou/LeLocalV3"
         },
         "rafale": {
+          "title" : "Rafale",
           "description": "Portfolio pour une artiste photographe",
-          "conclusion": "Utilisation des framworks Masonry et ShowImg"
+          "conclusion": "Utilisation des framworks Masonry et ShowImg",
+          "link": "https://rafale.guix.digital",
+          "gitHub": "https://github.com/guixou/Rafale"
         },
         "trainingStudio": {
+          "title" : "Training Studio",
           "description": "Site vitrine pour une salle de sport fictive avec divers éléments en JS",
-          "conclusion": "Site fictif fait pendant ma formation à la 3WA"
+          "conclusion": "Site fictif fait pendant ma formation à la 3WA",
+          "link": "https://trainingstudio.guix.digital",
+          "gitHub": "https://github.com/guixou/TrainingStudio"
         },
         "capiCreative": {
+          "title" : "Capi Creative",
           "description": "Pub pour une application de trading/cryptoactif",
-          "conclusion": "Site/PUB, défi intégration en moins d'une journée réussie"
+          "conclusion": "Site/PUB, défi intégration en moins d'une journée réussie",
+          "link": "https://capicrea.guix.digital",
+          "gitHub": "https://github.com/guixou/CapiCrea"
         },
         "montBlanc": {
+          "title" : "MontBlanc",
           "description": "Site vitrine pour un concept de moto, design par Dimitry Kiiashko",
-          "conclusion": "Intégration qui m'a permis d'apprendre les bases de Figma"
+          "conclusion": "Intégration qui m'a permis d'apprendre les bases de Figma",
+          "link": "https://montblanc.guix.digital",
+          "gitHub": "https://github.com/guixou/MontBlancinteg"
         }
       },
 
@@ -111,25 +132,46 @@
 
       "portfolio" :{
         "visite": "visit the website",
-        "LeLocal": {
+        "test": {
+          "description": "",
+          "conclusion": "",
+          "link": "",
+          "gitHub": ""
+        },
+        "leLocal": {
+          "title" : "Le Local",
           "description": "Showcase site for a tattoo shop with an admin page to add/edit/delete products",
-          "conclusion": "Fictitious website for my graduation"
+          "conclusion": "Fictitious website for my graduation",
+          "link": "https://guillaumepic.sites.3wa.io/ProjetFinal/index.php",
+          "gitHub": "https://github.com/guixou/LeLocalV3"
         },
         "rafale": {
+          "title" : "Rafale",
           "description": "Portfolio for a photographic artist",
-          "conclusion": "Using framworks Masonry and ShowImg"
+          "conclusion": "Using framworks Masonry and ShowImg",
+          "link": "https://rafale.guix.digital",
+          "gitHub": "https://github.com/guixou/Rafale"
         },
         "trainingStudio": {
+          "title" : "Training Studio",
           "description": "Showcase site for a fictitious gym with different components in JS",
-          "conclusion": "Fictitious site made during my formation at the 3WA"
+          "conclusion": "Fictitious site made during my formation at the 3WA",
+          "link": "https://trainingstudio.guix.digital",
+          "gitHub": "https://github.com/guixou/TrainingStudio"
         },
         "capiCreative": {
+          "title" : "Capi Creative",
           "description": "Ad for a trading/cryptoactive application",
-          "conclusion": "Site/PUB, integration challenge in less than a day"
+          "conclusion": "Site/PUB, integration challenge in less than a day",
+          "link": "https://capicrea.guix.digital",
+          "gitHub": "https://github.com/guixou/CapiCrea"
         },
         "montBlanc": {
+          "title" : "MontBlanc",
           "description": "Showcase site for a motorcycle concept, design by Dimitry Kiiashko",
-          "conclusion": "Integration that allowed me to learn the basics of Figma"
+          "conclusion": "Integration that allowed me to learn the basics of Figma",
+          "link": "https://montblanc.guix.digital",
+          "gitHub": "https://github.com/guixou/MontBlancinteg"
         }
       },
 

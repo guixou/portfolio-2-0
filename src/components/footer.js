@@ -1,7 +1,6 @@
-import Arrow from '../assets/svg/arrowLangue.svg';
 import C from '../assets/svg/copyright.svg'
 import '../styles/footer.css'
-import React, { useState, useEffect, useContext } from 'react';
+import React, { useContext } from 'react';
 import { LanguageValue } from '../context/LanguageValue';
 import { DataLanguage } from '../context/DataLanguage';
 
