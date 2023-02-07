@@ -32,7 +32,7 @@ export default function Contact() {
             <div className='mail'>
             {data ? (<h3>{data[language].contact.contact}</h3>) : (<p>Loading data...</p>)}
                 <CopyToClipboard text="pro.guillaume.picard@gmail.com">
-                    <a href="#" >Pro.Guillaume.Picard@gmail.com <img src={Copy} alt="copier l'email" /></a>
+                    <div className='copyMail'>Pro.Guillaume.Picard@gmail.com <img src={Copy} alt="copier l'email" /></div>
                 </CopyToClipboard>
                 {data ? (<p>{data[language].contact.location}</p>) : (<p>Loading data...</p>)}
             </div>

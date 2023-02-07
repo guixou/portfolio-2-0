@@ -46,8 +46,8 @@ export default function Portfolio() {
                                     <h4>{data[language].portfolio[project].title}</h4>
                                     <p>{data[language].portfolio[project].description}</p>
                                     <p>{data[language].portfolio[project].conclusion}</p>
-                                    <a href={data[language].portfolio[project].link} target="_blank">{data[language].portfolio.visite}</a>
-                                    <a href={data[language].portfolio[project].gitHub}  target="_blank">GitHub</a>
+                                    <a href={data[language].portfolio[project].link} target="noopener">{data[language].portfolio.visite}</a>
+                                    <a href={data[language].portfolio[project].gitHub}  target="noopener">GitHub</a>
                                 </React.Fragment>
 
                             ) : (<p>Loading data...</p>)                        

@@ -44,20 +44,23 @@
     line-height: 40px;
 }
 
-.mail a{
+.mail .copyMail{
     padding: 2px;
-    width: 200px;
     border: 0px solid var(--black);
+    -moz-user-select: none; /* Firefox */
+    -webkit-user-select: none; /* Chrome, Safari, Opéra depuis la version 15 */
+    -ms-user-select: none; /* Internet explorer depuis la version 10 et Edge */
+    user-select: none; /* Propriété standard */
 }
 
-.mail a:hover{
+.mail .copyMail:hover{
     border: 1px solid var(--black);
     border-radius: 10px;
     padding: 1px;
     transition: background-color 0.2s;
 }
 
-.mail a:active{
+.mail .copyMail:active{
     border: 1px solid var(--black);
     padding: 1px;
     background-color: #a8a7a7;

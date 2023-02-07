@@ -6,7 +6,7 @@ export default function Cv() {
     return (
         <div className='cv'>
             <a href="CV.pdf" download={Cvpdf}>Télécharger <img src={Download} alt="Télécharger mon CV" /></a>
-            <a href={Cvpdf} target = "_blank">Voir en ligne</a>
+            <a href={Cvpdf} target = "noopener">Voir en ligne</a>
         </div>
     );
 }

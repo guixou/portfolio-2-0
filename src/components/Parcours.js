@@ -32,7 +32,7 @@ export default function Parcours() {
                 </section>
                 <section>
                     <div className='WA'>
-                        <img src={WaImg} alt="image d'un bureau" />
+                        <img src={WaImg} alt="Un bureau" />
                         <div className='description'>
                             <h4>
                                 2021 <br/>
@@ -47,7 +47,7 @@ export default function Parcours() {
                 </section>
                 <section>
                     <div className='BTS'>
-                        <img src={BtsImg} alt="image représentant une salle de cours" />
+                        <img src={BtsImg} alt="Une salle de cours" />
                         <div className='description'>
                             <h4>
                                 2018-2020 <br/>
@@ -61,7 +61,7 @@ export default function Parcours() {
                 </section>
                 <section>
                     <div className='Valeo'>
-                        <img src={ValeoImg} alt="image représentant deux ingénieur" />
+                        <img src={ValeoImg} alt="Deux ingénieur" />
                         <div className='description'>
                             <h4>
                                 2018-2020 <br/>

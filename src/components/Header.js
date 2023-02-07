@@ -6,7 +6,6 @@ import ActiveNav from '../assets/svg/activeNav.svg'
 import DisableNav from '../assets/svg/disableNav.svg'
 import '../styles/header.css'
 import {Link} from "react-router-dom"
-import Footer from './Footer';
 import { LanguageValue } from '../context/LanguageValue';
 import { DataLanguage } from '../context/DataLanguage';
 
@@ -17,12 +16,12 @@ export default function Header() {
     // affichage airport
     const [letter, setLetter] = useState('');
     const [pas, setPas] = useState(0);
-    var passage = 0;
     const possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     const finalText = "GUILLAUME PICARD"
   
     useEffect(() => {
-      const timer = setInterval(() => {
+        var passage = 0;
+        const timer = setInterval(() => {
           setPas(pas => pas + 1);
           passage = passage + 1;
           setLetter(letter => {
